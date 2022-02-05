@@ -1,0 +1,30 @@
+@use 'vars' as *;
+@use 'fonts';
+@use 'font-functions';
+
+.primary-button {
+  font-family: 'Sukhumvit Set', 'sans-serif';
+  font-weight: 700;
+  font-size: 18px;
+  color: $dark-primary-color;
+  background-color: $accent-color;
+  border-radius: 2px;
+  padding: 14px 102px;
+  cursor: pointer;
+}
+
+.link-button {
+  font-family: 'Sukhumvit Set', 'sans-serif';
+  font-weight: 500;
+  font-size: rem(18px);
+  color: $light-primary-color;
+  background-color: $dark-accent-color;
+  border-radius: 2px;
+  padding: rem(15px);
+  max-width: 182px;
+  text-decoration: none;
+
+  [class^="icon-"], [class*=" icon-"] {
+    margin-right: rem(12px);
+  }
+}
