@@ -1,0 +1,22 @@
+@use 'buttons';
+@use 'font-size';
+@use 'fonts';
+@use 'form';
+@use 'icons';
+@use 'typography';
+@use 'vars';
+
+* {
+  font-family: "Sukhumvit Set", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $default-font-size;
+}
+
+body {
+  margin: 0;
+}
