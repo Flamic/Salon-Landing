@@ -1,0 +1,4 @@
+@function vw($size) {
+  $remSize: math.div($size, 1920px) * 100;
+  @return #{$remSize}vw;
+}
