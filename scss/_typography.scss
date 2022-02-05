@@ -1,0 +1,58 @@
+@use 'vars';
+@use 'fonts';
+@use 'font-functions';
+@use 'size-functions';
+
+h1 {
+  font-family: 'Saudagar', 'sans-serif';
+  font-weight: 400;
+  font-size: rem(275px);
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Saudagar', 'sans-serif';
+  font-weight: 400;
+  font-size: rem(50px);
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Sukhumvit Set', 'sans-serif';
+  font-weight: 300;
+  font-size: rem(22px);
+  line-height: 172%;
+
+  &.description {
+    font-size: rem(32px);
+    text-transform: uppercase;
+    color: $light-primary-color;
+  }
+
+  &.highlighted {
+    font-weight: 400;
+    font-size: rem(25px);
+    text-transform: uppercase;
+  }
+}
+
+.promo-text {
+  font-family: 'Saudagar', 'sans-serif';
+  font-weight: 400;
+  font-size: vw(315px);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $light-primary-color;
+}
+
+.dark {
+  h1, h2, h3 { color: $light-primary-color; }
+  p { color: $light-secondary-color; }
+}
+
+.light {
+  h1, h2, h3 { color: $dark-primary-color; }
+  p { color: $dark-secondary-color; }
+}
