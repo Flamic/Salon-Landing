@@ -1,7 +1,7 @@
-@use 'vars';
+@use 'vars' as *;
 @use 'fonts';
-@use 'font-functions';
-@use 'size-functions';
+@use 'font-functions' as *;
+@use 'size-functions' as *;
 
 h1 {
   font-family: 'Saudagar', 'sans-serif';

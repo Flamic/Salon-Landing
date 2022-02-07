@@ -1,10 +1,12 @@
 @use 'buttons';
-@use 'font-size';
+@use 'font-functions' as *;
 @use 'fonts';
 @use 'form';
 @use 'icons';
 @use 'typography';
-@use 'vars';
+@use 'vars' as *;
+
+@include default-font-size;
 
 * {
   font-family: "Sukhumvit Set", sans-serif;
@@ -13,10 +15,101 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: $default-font-size;
-}
-
 body {
   margin: 0;
 }
+
+section {
+  &.dark {
+    background-color: $dark-bg-color;
+  }
+
+  &.light {
+    background-color: $light-bg-color;
+  }
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: rem(80px) rem(115px);
+
+  *:not(:last-child) {
+    margin-right: rem(65px);
+  }
+
+  .logo {
+    height: rem(51px);
+    width: rem(151px);
+    margin-right: auto;
+
+    font-size: rem(18px);
+    font-weight: 500;
+    color: $light-primary-color;
+  }
+
+  div,
+  a {
+    font-size: rem(18px);
+    font-weight: 500;
+    color: $light-primary-color;
+    text-decoration: none;
+  }
+}
+
+.title-block {
+  background-image: url("../assets/images/title-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: rem(380px);
+  padding-bottom: rem(350px);
+
+  * {
+    display: block;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description {
+    margin-bottom: rem(70px);
+  }
+}
+
+.coming-soon {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .promo-text {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height: rem(245px);
+    white-space: nowrap;
+    margin-bottom: rem(210px);
+  }
+
+  * {
+    display: block;
+    max-width: rem(865px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: rem(40px);
+  }
+
+  p {
+    margin-bottom: rem(38px);
+    &:last-child {
+      margin-bottom: rem(440px);
+    }
+  }
+}
+
+

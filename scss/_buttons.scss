@@ -1,6 +1,6 @@
 @use 'vars' as *;
 @use 'fonts';
-@use 'font-functions';
+@use 'font-functions' as *;
 
 .primary-button {
   font-family: 'Sukhumvit Set', 'sans-serif';

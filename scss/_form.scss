@@ -1,6 +1,6 @@
-@use 'vars';
+@use 'vars' as *;
 @use 'fonts';
-@use 'font-functions';
+@use 'font-functions' as *;
 
 label {
   font-family: 'Sukhumvit Set', 'sans-serif';
