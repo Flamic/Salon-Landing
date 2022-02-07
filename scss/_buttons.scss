@@ -8,9 +8,15 @@
   font-size: 18px;
   color: $dark-primary-color;
   background-color: $accent-color;
+  border: none;
   border-radius: 2px;
   padding: 14px 102px;
   cursor: pointer;
+  transition: 0.15s linear;
+
+  &:hover, &:focus {
+    background-color: darken($accent-color, 10%);
+  }
 }
 
 .link-button {
