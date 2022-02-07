@@ -23,7 +23,7 @@ input[type='text'], .select {
   background: none;
   border: none;
   border-bottom: 2px solid $input-border-color;
-  padding: rem(14) 0;
+  padding: rem(14px) 0;
 
   &:hover + label {
     color: lighten($label-color, 10%);
