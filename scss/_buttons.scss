@@ -20,17 +20,29 @@
 }
 
 .link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(15px);
+  width: rem(182px);
+  
   font-family: 'Sukhumvit Set', 'sans-serif';
   font-weight: 500;
   font-size: rem(18px);
+  line-height: rem(22px);
+  
   color: $light-primary-color;
   background-color: $dark-accent-color;
   border-radius: 2px;
-  padding: rem(15px);
-  max-width: 182px;
   text-decoration: none;
+  transition: 0.15s linear;
+
+  &:hover, &:focus {
+    background-color: lighten($dark-accent-color, 15%);
+  }
 
   [class^="icon-"], [class*=" icon-"] {
+    font-size: rem(22px);
     margin-right: rem(12px);
   }
 }
