@@ -26,3 +26,11 @@
     font-size: var(--default-font-size);
   }
 }
+
+@mixin font-src($path) {
+  src:  url($path + '.eot');
+  src:  url($path + '.woff') format('woff'),
+        url($path + '.otf') format('opentype'),
+        url($path + '.ttf') format('truetype'),
+        url($path + '.svg') format('svg');
+}
