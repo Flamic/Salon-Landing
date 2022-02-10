@@ -1,0 +1,605 @@
+:root {
+  --default-font-size: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    --default-font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --default-font-size: 12px;
+  }
+}
+@font-face {
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light.eot");
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light.woff") format("woff"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light.otf") format("opentype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light.ttf") format("truetype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light.svg") format("svg");
+  font-family: "Sukhumvit Set";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular.eot");
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular.woff") format("woff"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular.otf") format("opentype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular.ttf") format("truetype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular.svg") format("svg");
+  font-family: "Sukhumvit Set";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium.eot");
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium.woff") format("woff"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium.otf") format("opentype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium.ttf") format("truetype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium.svg") format("svg");
+  font-family: "Sukhumvit Set";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold.eot");
+  src: url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold.woff") format("woff"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold.otf") format("opentype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold.ttf") format("truetype"), url("../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold.svg") format("svg");
+  font-family: "Sukhumvit Set";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular.eot");
+  src: url("../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular.woff") format("woff"), url("../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular.otf") format("opentype"), url("../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular.ttf") format("truetype"), url("../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular.svg") format("svg");
+  font-family: "Saudagar";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.primary-button {
+  font-family: "Sukhumvit Set", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  color: #1A1A1A;
+  background-color: #DCAC9B;
+  border: none;
+  border-radius: 2px;
+  padding: 14px 102px;
+  cursor: pointer;
+  transition: 0.15s linear;
+}
+.primary-button:hover, .primary-button:focus {
+  background-color: #cf8d75;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375rem;
+  width: 11.375rem;
+  font-family: "Sukhumvit Set", "sans-serif";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #FFFFFF;
+  background-color: black;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: 0.15s linear;
+}
+.link-button:hover, .link-button:focus {
+  background-color: #262626;
+}
+.link-button [class^=icon-], .link-button [class*=" icon-"] {
+  font-size: 1.375rem;
+  margin-right: 0.75rem;
+}
+
+label {
+  font-family: "Sukhumvit Set", "sans-serif";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 165%;
+  text-transform: uppercase;
+  color: #8E8E8E;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+input[type=text], .select {
+  position: relative;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFFFFFB2;
+  padding: 0.875rem 0;
+}
+input[type=text]:hover + label, .select:hover + label {
+  color: #a8a8a8;
+}
+input[type=text]:focus + label, input[type=text]:not(:placeholder-shown) + label, .select:focus + label, .select:not(:placeholder-shown) + label {
+  color: #a8a8a8;
+  font-size: 0.75rem;
+  top: 0;
+}
+
+.select {
+  cursor: pointer;
+}
+.select ~ .icon-select-arrow {
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/Icons/icomoon.eot?pladt7");
+  src: url("../assets/fonts/Icons/icomoon.eot?pladt7#iefix") format("embedded-opentype"), url("../assets/fonts/Icons/icomoon.ttf?pladt7") format("truetype"), url("../assets/fonts/Icons/icomoon.woff?pladt7") format("woff"), url("../assets/fonts/Icons/icomoon.svg?pladt7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple:before {
+  content: "\e900";
+}
+
+.icon-copyright:before {
+  content: "\e901";
+}
+
+.icon-google-play:before {
+  content: "\e902";
+}
+
+.icon-select-arrow:before {
+  content: "\e903";
+}
+
+h1 {
+  font-family: "Saudagar", "sans-serif";
+  font-weight: 400;
+  font-size: 17.1875rem;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Saudagar", "sans-serif";
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Sukhumvit Set", "sans-serif";
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 172%;
+}
+p.description {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.promo-text {
+  font-family: "Saudagar", "sans-serif";
+  font-weight: 400;
+  font-size: 16.40625vw;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.dark h1, .dark h2 {
+  color: #FFFFFF;
+}
+.dark p {
+  color: #FFFFFFCC;
+}
+
+.light h1, .light h2 {
+  color: #1A1A1A;
+}
+.light p {
+  color: #1A1A1ACC;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+html {
+  font-size: var(--default-font-size);
+}
+
+* {
+  font-family: "Sukhumvit Set", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section.dark {
+  background-color: #1A1A1A;
+}
+section.light {
+  background-color: #FFFFFF;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 7.1875rem;
+}
+@media screen and (max-width: 900px) {
+  header {
+    padding: 3.75rem 5.625rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+header > *:not(:last-child) {
+  margin-right: 4.0625rem;
+}
+@media screen and (max-width: 900px) {
+  header > *:not(:last-child) {
+    margin-right: 1.875rem;
+  }
+}
+header .logo {
+  width: 9.4375rem;
+  height: 3.1875rem;
+  margin-right: auto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 650px) {
+  header .logo {
+    margin-left: auto;
+    width: 25%;
+  }
+}
+header div,
+header a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 650px) {
+  header div,
+header a {
+    display: none;
+  }
+}
+header div i,
+header a i {
+  margin-right: 0.75rem;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#000000B8, #000000B8), url("../assets/images/title-bg.jpg");
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: 30%;
+  padding-top: 23.75rem;
+  padding-bottom: 21.875rem;
+  min-height: 100vh;
+}
+.title-block * {
+  display: block;
+  max-width: max-content;
+}
+@media screen and (max-width: 650px) {
+  .title-block h1 {
+    font-size: 28vw;
+  }
+}
+.title-block .description {
+  margin: 0 5% 4.375rem;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .title-block .description {
+    font-size: 5vw;
+  }
+}
+
+.coming-soon {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.coming-soon .promo-text {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 12.5rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.06) 70%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+.coming-soon .content {
+  padding: 0 2.1875rem;
+}
+.coming-soon .content * {
+  display: block;
+  max-width: 54.0625rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.coming-soon .content h2 {
+  margin-bottom: 2.5rem;
+}
+.coming-soon .content p {
+  margin-bottom: 2.375rem;
+}
+.coming-soon .content p:last-child {
+  margin-bottom: 27.5rem;
+}
+
+.num {
+  font-family: "Saudagar", sans-serif;
+  font-size: 1.875rem;
+  line-height: 150%;
+  color: #DCAC9B;
+}
+
+h2 {
+  margin-bottom: 2.8125rem;
+}
+
+.s-01 > img {
+  display: block;
+  width: 95rem;
+  max-width: 95%;
+  max-height: 47.5rem;
+  margin: 0 auto 8.75rem;
+  transform: translateY(-12.5rem);
+  object-fit: cover;
+}
+.s-01 .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20.3125rem;
+  padding: 0 2.5rem;
+  max-width: 96.25rem;
+}
+.s-01 .content img {
+  width: 37.8125rem;
+  height: 20.625rem;
+  margin-right: 5rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 1100px) {
+  .s-01 .content img {
+    width: 50%;
+    margin-right: 2.5rem;
+  }
+}
+.s-01 .content .text {
+  max-width: 30.3125rem;
+}
+
+.s-02 {
+  overflow: visible;
+}
+.s-02 .content {
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 12.5rem 0 17.5rem;
+}
+@media screen and (max-width: 1600px) {
+  .s-02 .content {
+    margin: 0 6.25rem 0 9.375rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .s-02 .content {
+    margin: 0 3.125rem 0 4.6875rem;
+    height: 37.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .s-02 .content {
+    margin: 0;
+    flex-direction: column;
+    height: max-content;
+    padding-top: 10% 0;
+  }
+}
+.s-02 .content img {
+  width: 36.25rem;
+  height: 64.375rem;
+  margin-top: -5rem;
+  object-fit: cover;
+  object-position: 35%;
+}
+@media screen and (max-width: 1600px) {
+  .s-02 .content img {
+    height: 59.375rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .s-02 .content img {
+    width: 50%;
+    margin: 0;
+    height: 31.25rem;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .s-02 .content img {
+    width: 100%;
+    height: auto;
+    max-height: 28.75rem;
+  }
+}
+.s-02 .content .text {
+  align-self: center;
+  max-width: 28.125rem;
+  padding-right: 2.5rem;
+}
+@media screen and (max-width: 900px) {
+  .s-02 .content .text {
+    margin: 4.6875rem 0;
+    max-width: 70%;
+  }
+}
+.s-02 .content .text h2 {
+  max-width: 24.375rem;
+}
+
+.s-03 .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 15rem 12.5rem 17.5rem;
+}
+@media screen and (max-width: 1500px) {
+  .s-03 .content {
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .s-03 .content {
+    height: max-content;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13.75rem;
+    padding: 0 6.25rem;
+  }
+}
+.s-03 .content .text {
+  max-width: 30.3125rem;
+}
+@media screen and (max-width: 1100px) {
+  .s-03 .content .text:first-child {
+    align-self: flex-start;
+    margin-bottom: 6.25rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .s-03 .content .text:first-child {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .s-03 .content .text:last-child {
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 900px) {
+  .s-03 .content .text:last-child {
+    align-self: center;
+  }
+}
+.s-03 .content .text h2 {
+  max-width: 24.375rem;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.phone .content {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 4.375rem 0 16.5625rem;
+  width: 120rem;
+}
+.phone .content .circle {
+  display: block;
+  width: 33.8125rem;
+  height: 33.8125rem;
+  border-radius: 50%;
+  background-color: #DCAC9B;
+  margin-right: 2.5rem;
+  opacity: 0.6;
+}
+.phone .content .circle.decorative {
+  background-color: #ffffff00;
+  margin-right: 0;
+  animation: rotation 30s linear infinite;
+}
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.phone .content .phone-img {
+  display: block;
+  position: absolute;
+  top: -4.375rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 47.25rem;
+  border-radius: 1.6145833333vw;
+  backface-visibility: hidden;
+}
+.phone .highlighted {
+  font-weight: 400;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  margin-bottom: 3.125rem;
+}
+.phone .links {
+  display: flex;
+  margin-bottom: 12.5rem;
+}
+.phone .links > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
