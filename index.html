@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Salon</title>
   </head>
   <body>
     <header>
-      <img src="./assets/images/logo.svg" alt="Logo" />
+      <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
       <div>Coming soon on:</div>
-      <div><i class="icon-apple"></i>App Store</div>
-      <div><i class="icon-google-play"></i>Google Play</div>
+      <a href="https://www.apple.com/ua/app-store">
+        <i class="icon-apple"></i>
+        <span>App Store</span>
+      </a>
+      <a href="https://play.google.com">
+        <i class="icon-google-play"></i>
+        <span>Google Play</span>
+      </a>
     </header>
 
-    <section class="title-block">
+    <section class="dark title-block">
       <h1>Salon</h1>
       <p class="description">Quality Lashes from the comfort of your home</p>
-      <button class="primary-button"></button>
+      <button class="primary-button">Subscribe</button>
     </section>
 
-    <section class="dark">
+    <section class="dark coming-soon">
       <div class="promo-text">Coming soon</div>
       <div class="content">
         <h2>Lash Experts to your doors within hours</h2>
@@ -38,10 +44,10 @@
       </div>
     </section>
 
-    <section class="light">
-      <img src="./assets/images/01-bg.jfif" alt="Makeup" />
+    <section class="light s-01">
+      <img src="./assets/images/01-bg.jpg" alt="Makeup" />
       <div class="content">
-        <img src="./assets/images/01-pic.jpg" alt="Schedule">
+        <img src="./assets/images/01-pic.jpg" alt="Schedule" />
         <div class="text">
           <div class="num">01</div>
           <h2>Make your own schedule</h2>
@@ -50,21 +56,106 @@
       </div>
     </section>
 
-    <section class="dark">
+    <section class="dark s-02">
       <div class="content">
         <div class="text">
           <div class="num">02</div>
           <h2>Make good money</h2>
-          <p>Who says artists can’t get paid well? Our clients appreciate your mastery.</p>
+          <p>
+            Who says artists can’t get paid well? Our clients appreciate your
+            mastery.
+          </p>
         </div>
-        <img src="./assets/images/02-pic.jpg" alt="Eye operation">
+        <img src="./assets/images/02-pic.jpg" alt="Eye operation" />
       </div>
     </section>
 
-    <section class="light"></section>
+    <section class="light s-03">
+      <div class="content">
+        <div class="text">
+          <div class="num">03</div>
+          <h2>Make your skills sharper</h2>
+          <p>
+            Apply to be a Master lash artist with increased marketing perks and
+            pricing for your services and talent.
+          </p>
+        </div>
+        <div class="text">
+          <div class="num">04</div>
+          <h2>Make it personal</h2>
+          <p>
+            Get to know your clients and build a bigger book of clients faster.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <section class="dark"></section>
-    
+    <section class="light phone">
+      <div class="content">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <img class="circle decorative" src="./assets/images/03-circle.svg" alt="Decorative circle" />
+        <img
+          class="phone-img"
+          src="./assets/images/03-phone.jpg"
+          alt="Smartphone app"
+        />
+      </div>
+      <div class="highlighted">Coming soon on</div>
+      <div class="links">
+        <a href="https://www.apple.com/ua/app-store" class="link-button">
+          <i class="icon-apple"></i>
+          App Store
+        </a>
+        <a href="https://play.google.com" class="link-button">
+          <i class="icon-google-play"></i>
+          Google Play
+        </a>
+      </div>
+    </section>
+
+    <section class="dark subscribe">
+      <form>
+        <div>
+          <input type="text" name="first-name" id="first-name" />
+          <label for="first-name">First name</label>
+        </div>
+
+        <div>
+          <input type="text" name="last-name" id="last-name" />
+          <label for="last-name">Last name</label>
+        </div>
+
+        <div>
+          <input class="select" type="text" name="interested" id="interested" />
+          <label for="interested">Interested in being a client or lashes</label>
+          <i class="icon-select-arrow"></i>
+        </div>
+
+        <div>
+          <input type="text" name="city" id="city" />
+          <label for="city">City</label>
+        </div>
+
+        <div>
+          <input type="text" name="state" id="state" />
+          <label for="state">State</label>
+        </div>
+
+        <div>
+          <input type="text" name="phone-number" id="phone-number" />
+          <label for="phone-number">Phone number</label>
+        </div>
+
+        <div>
+          <input type="email" name="email" id="email" />
+          <label for="email">Email</label>
+        </div>
+
+        <button type="submit" class="primary-button">Subscribe</button>
+      </form>
+    </section>
+
     <footer>
       <img src="./assets/images/logo.svg" alt="Logo" />
       <div>
