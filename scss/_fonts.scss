@@ -1,64 +1,43 @@
-@font-face {
-  font-family: 'Sukhumvit Set';
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.eot');
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.woff2') format('woff2'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.woff') format('woff'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.ttf') format('truetype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium.svg#SukhumvitSet-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@use 'font-functions' as *;
 
+// Sukhumvit Set //
 @font-face {
+  @include font-src('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light/SukhumvitSet-Light');
   font-family: 'Sukhumvit Set';
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.eot');
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.woff2') format('woff2'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.woff') format('woff'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.ttf') format('truetype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold.svg#SukhumvitSet-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Sukhumvit Set';
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.eot');
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.woff2') format('woff2'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.woff') format('woff'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.ttf') format('truetype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Light.svg#SukhumvitSet-Light') format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  @include font-src('../assets/fonts/Sukhumvit Set/SukhumvitSet-Regular/SukhumvitSet-Regular');
   font-family: 'Sukhumvit Set';
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.eot');
-  src: url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.woff2') format('woff2'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.woff') format('woff'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.ttf') format('truetype'),
-      url('../assets/fonts/Sukhumvit Set/SukhumvitSet-Text.svg#SukhumvitSet-Text') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
+  @include font-src('../assets/fonts/Sukhumvit Set/SukhumvitSet-Medium/SukhumvitSet-Medium');
+  font-family: 'Sukhumvit Set';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  @include font-src('../assets/fonts/Sukhumvit Set/SukhumvitSet-Bold/SukhumvitSet-Bold');
+  font-family: 'Sukhumvit Set';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Saudagar //
+@font-face {
+  @include font-src('../assets/fonts/Saudagar/Saudagar-Regular/Saudagar-Regular');
   font-family: 'Saudagar';
-  src: url('../assets/fonts/Saudagar/Saudagar.eot');
-  src: url('../assets/fonts/Saudagar/Saudagar.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Saudagar/Saudagar.woff2') format('woff2'),
-      url('../assets/fonts/Saudagar/Saudagar.woff') format('woff'),
-      url('../assets/fonts/Saudagar/Saudagar.ttf') format('truetype'),
-      url('../assets/fonts/Saudagar/Saudagar.svg#Saudagar') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
