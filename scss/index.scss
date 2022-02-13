@@ -589,3 +589,40 @@ h2 {
     }
   }
 }
+
+.subscribe {
+  display: flex;
+
+  img {
+    max-width: 50%;
+    object-fit: cover;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  form {
+    max-width: rem(660px);
+    width: 100%;
+    padding: rem(120px) rem(50px);
+    margin: auto;
+
+    @media screen and (max-width: 400px) {
+      padding: 70px 20px;
+    }
+
+    & > * {
+      width: 100%;
+    }
+
+    .input-box {
+      margin-bottom: rem(36px);
+    }
+
+    button {
+      margin-top: rem(34px);
+    }
+  }
+}
+
