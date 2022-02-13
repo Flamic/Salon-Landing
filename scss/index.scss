@@ -205,6 +205,14 @@ header {
         background-position: -200% center;
       }
     }
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 50px;
+    }
   }
 
   .content {
@@ -226,6 +234,14 @@ header {
       margin-bottom: rem(38px);
       &:last-child {
         margin-bottom: rem(440px);
+
+        @media screen and (max-width: 650px) {
+          margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 500px) {
+          margin-bottom: 50px;
+        }
       }
     }
   }
