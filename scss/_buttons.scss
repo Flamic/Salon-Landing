@@ -12,6 +12,7 @@
   border-radius: 2px;
   padding: 14px 102px;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.15s linear;
 
   &:hover, &:focus {
@@ -36,6 +37,10 @@
   border-radius: 2px;
   text-decoration: none;
   transition: 0.15s linear;
+
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 
   &:hover, &:focus {
     background-color: lighten($dark-accent-color, 15%);
