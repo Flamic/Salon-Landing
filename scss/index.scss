@@ -496,6 +496,15 @@ h2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-top: rem(280px);
+
+  @media screen and (max-width: 1100px) {
+    padding-top: rem(220px);
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-top: 65px;
+  }
 
   .content {
     display: flex;
@@ -503,6 +512,10 @@ h2 {
     justify-content: center;
     margin: rem(70px) 0 rem(265px);
     width: rem(1920px);
+
+    @media screen and (max-width: 500px) {
+      margin: 25px 0 100px;
+    }
 
     .circle {
       display: block;
@@ -512,6 +525,11 @@ h2 {
       background-color: $accent-color;
       margin-right: rem(40px);
       opacity: 0.6;
+
+      @media screen and (max-width: 500px) {
+        width: 200px;
+        height: 200px;
+      }
 
       &.decorative {
         background-color: #ffffff00;
@@ -534,8 +552,15 @@ h2 {
       right: 0;
       margin: 0 auto;
       height: rem(756px);
-      border-radius: vw(31px);
+      border-radius: rem(31px);
+      box-shadow: 0px 4px 94px rgba(69, 56, 44, 0.15);
       backface-visibility: hidden;
+
+      @media screen and (max-width: 500px) {
+        top: -25px;
+        height: 280px;
+        border-radius: 11.5px;
+      }
     }
   }
 
@@ -544,11 +569,20 @@ h2 {
     font-size: rem(25px);
     text-transform: uppercase;
     margin-bottom: rem(50px);
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
   }
 
   .links {
     display: flex;
     margin-bottom: rem(200px);
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 70px;
+    }
 
     & > *:not(:last-child) {
       margin-right: 20px;
