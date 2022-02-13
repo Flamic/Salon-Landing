@@ -31,6 +31,16 @@ p {
   }
 }
 
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
 .promo-text {
   font-family: 'Saudagar', 'sans-serif';
   font-weight: 400;
