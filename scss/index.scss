@@ -362,25 +362,26 @@ h2 {
 
   .content {
     height: max-content;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0 rem(200px) 0 rem(280px);
+    padding: 0 rem(200px) 0 rem(280px);
+    margin: 0 auto;
 
     @media screen and (max-width: 1600px) {
-      margin: 0 rem(100px) 0 rem(150px);
+      padding: 0 rem(100px) 0 rem(150px);
     }
 
     @media screen and (max-width: 1100px) {
-      margin: 0 rem(50px) 0 rem(75px);
+      padding: 0 rem(50px) 0 rem(75px);
       height: rem(600px);
     }
 
     @media screen and (max-width: 900px) {
-      margin: 0;
+      padding: 0;
       flex-direction: column;
       height: max-content;
-      padding-top: 10% 0;
     }
 
     img {
@@ -418,8 +419,10 @@ h2 {
         max-width: 70%;
       }
 
-      @media screen and (max-width: 650px) {
-
+      @media screen and (max-width: 400px) {
+        margin: 0;
+        padding: 50px 20px;
+        max-width: none;
       }
 
       h2 {
