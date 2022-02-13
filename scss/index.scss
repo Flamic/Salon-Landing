@@ -279,12 +279,19 @@ h2 {
 .s-01 {
   & > img {
     display: block;
-    width: rem(1520px);
-    max-width: 95%;
+    width: 95%;
+    max-width: rem(1520px);
     max-height: rem(760px);
     margin: 0 auto rem(140px);
     transform: translateY(rem(-200px));
     object-fit: cover;
+
+    @media screen and (max-width: 650px) {
+      width: 100%;
+      max-height: 60vw;
+      margin-bottom: 50px;
+      transform: none;
+    }
   }
 
   .content {
@@ -294,6 +301,12 @@ h2 {
     margin: 0 auto rem(325px);
     padding: 0 rem(40px);
     max-width: rem(1540px);
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column-reverse;
+      padding: 0;
+      margin: 0;
+    }
 
     img {
       width: rem(605px);
@@ -305,10 +318,41 @@ h2 {
         width: 50%;
         margin-right: rem(40px);
       }
+
+      @media screen and (max-width: 650px) {
+        width: 100%;
+        height: auto;
+        margin: 30px 0 65px;
+        padding: 0 20px;
+      }
     }
 
     .text {
       max-width: rem(485px);
+
+      @media screen and (max-width: 650px) {
+        max-width: 70%;
+        padding-right: 30px;
+
+        & > * {
+          width: 100%;
+        }
+
+        p {
+          width: 305px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        max-width: none;
+        width: 100%;
+        padding: 0 20px;
+
+        p {
+          width: 100%;
+          padding-right: 30px;
+        }
+      }
     }
   }
 }
