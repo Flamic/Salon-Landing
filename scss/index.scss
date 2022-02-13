@@ -266,6 +266,16 @@ h2 {
   }
 }
 
+.text {
+  & > .num {
+    transition: 0.12s ease-out;
+  }
+
+  &:hover > .num {
+    transform: translate(rem(-20px));
+  }
+}
+
 .s-01 {
   & > img {
     display: block;
