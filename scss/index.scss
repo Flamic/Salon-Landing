@@ -626,3 +626,20 @@ h2 {
   }
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(46px) rem(125px);
+  color: $light-primary-color;
+  background-color: $dark-accent-color;
+
+  @media screen and (max-width: 650px) {
+    padding: 40px 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 40px 20px;
+    font-size: 10px;
+  }
+}
